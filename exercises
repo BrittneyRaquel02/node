@@ -1,0 +1,60 @@
+// (function(){
+//   angular.model('app'
+//   .componet('hello',{
+//     templateUrl: 'hello/hello.html',
+//     controller: 'HelloController'
+//   });
+// })();
+
+
+// //hello controller
+// //actual function
+
+// (function(){
+//   angular.mode('app')
+//   .controller('HelloController', function(){
+//     var vm = this;
+//   });
+// })();
+
+//without a factory we cannot connect data from two different views
+//you can use bindings to pass data, but not if they are two completely different views
+//factories do api calls b/c you need api calls from more than one place
+
+
+// var list = [1, 2, 3, 4];
+// list.forEach(function(item){
+//   console.log(item);
+// });
+
+// function each (array, fn){
+//   for (var i = 0; i<array.length; i++){
+//     fn(array[i]);
+//   }
+// }
+
+// each(list, function(item){
+//   console.log(item);
+// });
+
+
+var mathFunctions = [];
+
+function add (a, b){
+  return a + b;
+}
+function subtract (a-b){
+  return a-b;
+}
+function multiply (a*b){
+  return a*b;
+}
+function divide (a/b){
+  return a/b;
+}
+
+function execute(fn, param1, param2){
+ return fn(param1, param2);
+}
+
+execute(add, 5, 7);
